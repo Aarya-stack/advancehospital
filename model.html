@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container text-center pt-5">
+  <h2>Appoinment</h2>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+     Get Appoinment
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal pt-5" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title "><h4 class="p-2 text-center!important">Appoinment Shedule</h4></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form action="/action_page.php">
+                        <script type="text/javascript">
+                                      function hello() 
+                                     {
+                                         alert("Your Query has been submit sucessfully...");
+                                      }
+                                  </script>
+					<form action="/action_page.php">
+                        <div class="form-group">
+                            <input type="text" class="form-control"  id="username" required autocomplete="off" placeholder="Enter Your name">
+                        </div>
+                        <form action="/action_page.php">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" required autocomplete="off" placeholder="Enter your Email id">
+                        </div>
+                        <form action="/action_page.php">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="mobile" required autocomplete="off" placeholder="Enter your mobile number">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control"  id="username" required autocomplete="off" placeholder="Write Doctor name">
+                        </div>
+                        <div class="form-group">
+
+                            <textarea class="form-control" rows="4" id="message" required autocomplete="off" placeholder="Explain Your Problems"></textarea>
+                        
+                        </div>
+                        <div class="d-flex justify-content-center form-button">
+                           
+                        
+                           <button type="submit" class="btn btn-primary"  value="click" onclick="hello()">Submit</button></div>
+                    </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>

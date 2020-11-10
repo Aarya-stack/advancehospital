@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get Appoinment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" />
+<style type="text/css">
+  body{
+    width: 100%;
+    height: 100%;
+    background-image: url(image/images11.jpg);
+  }
+  .inner-layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,147,173,0.3);
+    overflow: auto;
+  }
+  .form-data{
+    margin-top: 25px;
+    background-color: #fff;
+
+  }
+  .form-body{
+     padding: 20px;
+  }
+  .form-head{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  .form-head h2{
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .no-margin{
+    margin: 0px;
+  }
+  .form-row{
+    margin-bottom:10px;
+  }
+  .form-control{
+    background-color: #f7f7ff;
+  }
+  .form-control:hover{
+    box-shadow: none;
+    border:3px solid #138496;
+  }
+  .btn-appoinment{
+    background-color: #138496;
+    border-color: #138496;
+    width: 100%;
+  }
+  .content{
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+    padding:5px;
+  }
+  .content h1{
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+  .content p{
+    font-size: 20px;
+  }
+  .page-div{
+    font-size: 30px;
+    color: #fff;
+    background-color: blue;
+
+  }
+  .datepicker td, .datepicker th{
+    padding: 8px;
+  }
+  .dropdown-menu.datepicker{
+    max-width: 300px!important;
+  }
+  @media screen and (max-width: 976px){
+
+  }
+</style>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Your Appoinment is conform");
+  }
+}
+</script>
+
+</head>
+<body>
+  <div class="inner-layer">
+    <div class="container">
+      <div class="row no-margin">
+        <div class="col-sm-7">
+          <div class="content">
+            <h1>Book Your Appoinment Online </h1>
+            <p>Advance Hospital represents the best amalgamation of world class technology, the best medical minds working in a Multi Disciplinary Team framework to ensure best possible care to all patients. Spanning across 15 acres of land with a capacity of 700+ beds, Nepal Mediciti is the largest private hospital with super specialty treatment services in Nepal.</p>
+            <p>Covering a built-up area of over 600,000 sq. ft., Nepal MediCiti (NMC) will include facilities that will not only cater to the local population but also promote medical tourism. Nepal MediCiti (NMC) will be equipped with the best ambulance service as well heli- ambulance. The 750 Bedded Multi Speciality Hospital will be having 17 state of the art, well equipped modular operation theatres with Hepafilter, Integrated feature and Gas Scavenging System, as per latest NABH JCI norms along with 20-inch flat panel Cathlab.</p>
+
+            <div>
+            <button type="button" class="btn btn-secondary btn-lg btn-block"><a style="text-decoration: none; color: white;" href="index.html"> Go to HomePage</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="form-data">
+             <div class="form-head">
+               <h1>Book An Appoinment</h1>
+             </div>
+            <div class="form-body">
+             <h5>Appoinment Detail</h5>
+             <div class="row form-row">
+                    <select type="option" placeholder="Department" class="form-control"     name="">
+                      <option>Center of Neurology</option>
+                      <option>Center of Cardiology</option>
+                      <option>Center of Phiscian</option>
+                    </select>
+                  </div>
+            <div class="row form-row">                    <select type="option" placeholder="Phiscian Name" class="form-control" name="">
+                      <option>Dr.Ram Kumar Sah</option>
+                      <option>Dr. Pradip Sah</option>
+                      <option>Dr. Dev Kumar</option>
+                    </select>
+              </div>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                <div class="row form-row">
+                  <input type="text" placeholder="Enter Full Name" class="form-control" name="fname" required autocomplete="off">
+                </div>
+                <div class="row form-row">
+                  <input type="number" placeholder="Enter Mobile No." required autocomplete="off"  class="form-control" name="fname" >
+                </div>
+                <div class="row form-row">
+                  <input type="email" placeholder="Enter Email address" required autocomplete="off" class="form-control" name="fname">
+                </div>
+                <div class="row form-row">
+                  <input id="date" type="text" placeholder="Appoinment Date" class="form-control"     name="fname">
+                </div>
+                <h6>Address Details</h6>
+                <div class="row form-row">
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="Enter Area" class="form-control"  required autocomplete="off"   name="fname">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="Enter City" class="form-control" required autocomplete="off" name="fname">
+                  </div></div>
+                  <div class="row form-row ">
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="Enter State" class="form-control" required autocomplete="off" name="fname">
+                  </div>
+                  <div class="col-sm-6">
+                     <input type="number" placeholder="Enter Postal code" class=" form-control" required autocomplete="off" name="fname">
+                  </div></div>
+                  <div class="row form-row">
+                     <button type="submit" class="btn btn-success btn-appoinment">Get Appoinment</button>
+                   </div>
+                     <div class="row form-row">
+                       <button type="submit" class="btn btn-success btn-appoinment">View Appoinment</button>
+                    </div></form>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- **********************************************************************************************************8 -->
+
+
+    <!-- **********************************************************************************************************8 -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#date").datepicker();
+
+    })
+</script>
+</body>
+</html>
